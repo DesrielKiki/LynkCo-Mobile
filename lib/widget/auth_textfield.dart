@@ -45,7 +45,7 @@ class _AuthTextfieldState extends State<AuthTextfield> {
         ),
         //    hintText: widget.hintText,
         labelText: widget.labelText,
-        labelStyle: TextstyleConfig.largeOnPrimary(),
+        labelStyle: TextstyleConfig.regularOnPrimary16(),
         suffixIcon: widget.obscureText
             ? IconButton(
                 onPressed: () {
@@ -66,7 +66,6 @@ class _AuthTextfieldState extends State<AuthTextfield> {
                   ColorConfig.onSecondaryColor,
                 ),
               ),
-        hintStyle: TextstyleConfig.largeOnPrimary(),
         filled: true,
         fillColor: Colors.white,
         border: OutlineInputBorder(
