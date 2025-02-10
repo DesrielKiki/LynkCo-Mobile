@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "704246471313",
+    "project_id": "lynkco-id",
+    "storage_bucket": "lynkco-id.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:704246471313:android:aba45601ff771e8c917d30",
+        "android_client_info": {
+          "package_name": "com.example.lynkco"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkfgIB4BZcabVP_OUkU0O-JDAQ45d4RhU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
