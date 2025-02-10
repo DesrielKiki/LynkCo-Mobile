@@ -29,4 +29,32 @@ class TextstyleConfig {
       fontStyle: style,
     );
   }
+
+  static TextStyle firstSupportText({
+    Color color = const Color(ColorConfig.onSecondaryColor),
+    double size = 14.0,
+    FontWeight weight = FontWeight.normal,
+    FontStyle style = FontStyle.normal,
+  }) {
+    return TextStyle(
+      color: color,
+      fontSize: size,
+      fontWeight: weight,
+      fontStyle: style,
+    );
+  }
+
+  static TextStyle secondSupportText({
+    Color color = const Color(ColorConfig.red),
+    double size = 14.0,
+    FontWeight weight = FontWeight.normal,
+    FontStyle style = FontStyle.normal,
+  }) {
+    return TextStyle(
+      color: color,
+      fontSize: size,
+      fontWeight: weight,
+      fontStyle: style,
+    );
+  }
 }
