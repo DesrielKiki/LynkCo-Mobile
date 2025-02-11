@@ -45,7 +45,7 @@ class _AuthTextfieldState extends State<AuthTextfield> {
         ),
         //    hintText: widget.hintText,
         labelText: widget.labelText,
-        labelStyle: TextstyleConfig.regularOnPrimary16(),
+        labelStyle: TextstyleConfig.boldOnPrimary14(),
         suffixIcon: widget.obscureText
             ? IconButton(
                 onPressed: () {

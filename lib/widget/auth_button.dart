@@ -29,7 +29,7 @@ class _AuthButtonState extends State<AuthButton> {
           minimumSize: const Size(double.infinity, 50)),
       child: Text(
         widget.buttonText,
-        style: TextstyleConfig.boldOnPrimary16(),
+        style: TextstyleConfig.boldOnPrimary14(),
       ),
     );
   }
