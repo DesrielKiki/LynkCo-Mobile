@@ -1,5 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:lynkco/screen/auth/login_screen.dart';
+import 'package:lynkco/screen/auth/register_screen.dart';
+import 'package:lynkco/theme/color_config.dart';
+import 'package:lynkco/widget/auth_button.dart';
+import 'package:lynkco/widget/auth_support_text.dart';
+import 'package:lynkco/widget/auth_textfield.dart';
 
 void main() {
   runApp(const MyApp());
