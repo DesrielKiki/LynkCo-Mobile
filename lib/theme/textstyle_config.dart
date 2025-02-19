@@ -1,232 +1,95 @@
 import 'package:flutter/material.dart';
-import 'package:lynkco/theme/color_config.dart';
+import 'package:lynkco/theme/color_config.dart'; // Pastikan Anda mengimpor color_config.dart
 
-class TextstyleConfig {
-  // bold onPrimary
-  static TextStyle? boldOnPrimary14({
-    Color color = ColorConfig.onPrimaryColor,
-    double size = 14.0,
-    FontWeight weight = FontWeight.bold,
-    FontStyle style = FontStyle.normal,
-  }) {
+class TextStyleConfig {
+  static final BoldTertiaryStyle boldTertiary = BoldTertiaryStyle();
+  static final BoldWhiteStyle boldWhite = BoldWhiteStyle();
+  static final RegularTertiaryStyle regularTertiary = RegularTertiaryStyle();
+  static final RegularWhiteStyle regularWhite = RegularWhiteStyle();
+  static final RegularGrayStyle regularGray = RegularGrayStyle();
+}
+
+class BoldTertiaryStyle {
+  TextStyle _createTextStyle(double size) {
     return TextStyle(
-      color: color,
+      color: ColorConfig.tertiaryColor, // Warna default, bisa diubah
       fontSize: size,
-      fontWeight: weight,
-      fontStyle: style,
+      fontWeight: FontWeight.bold,
     );
   }
 
-  static TextStyle boldOnPrimary16({
-    Color color = ColorConfig.onPrimaryColor,
-    double size = 16.0,
-    FontWeight weight = FontWeight.bold,
-    FontStyle style = FontStyle.normal,
-  }) {
+  TextStyle s14() => _createTextStyle(14);
+  TextStyle s16() => _createTextStyle(16);
+  TextStyle s18() => _createTextStyle(18);
+  TextStyle s20() => _createTextStyle(20);
+
+  // Anda bisa menambahkan ukuran lain sesuai kebutuhan
+}
+
+class BoldWhiteStyle {
+  TextStyle _createTextStyle(double size) {
     return TextStyle(
-      color: color,
+      color: ColorConfig.solidWhite, // Warna default, bisa diubah
       fontSize: size,
-      fontWeight: weight,
-      fontStyle: style,
+      fontWeight: FontWeight.bold,
     );
   }
 
-  static TextStyle boldOnPrimary18({
-    Color color = (ColorConfig.onPrimaryColor),
-    double size = 18.0,
-    FontWeight weight = FontWeight.bold,
-    FontStyle style = FontStyle.normal,
-  }) {
+  TextStyle s14() => _createTextStyle(14);
+  TextStyle s16() => _createTextStyle(16);
+  TextStyle s18() => _createTextStyle(18);
+  TextStyle s20() => _createTextStyle(20);
+
+  // Anda bisa menambahkan ukuran lain sesuai kebutuhan
+}
+
+class RegularTertiaryStyle {
+  TextStyle _createTextStyle(double size) {
     return TextStyle(
-      color: color,
+      color: ColorConfig.tertiaryColor, // Warna default, bisa diubah
       fontSize: size,
-      fontWeight: weight,
-      fontStyle: style,
+      fontWeight: FontWeight.normal,
     );
   }
 
-  static TextStyle boldOnPrimary20({
-    Color color = (ColorConfig.onPrimaryColor),
-    double size = 20.0,
-    FontWeight weight = FontWeight.bold,
-    FontStyle style = FontStyle.normal,
-  }) {
+  TextStyle s14() => _createTextStyle(14);
+  TextStyle s16() => _createTextStyle(16);
+  TextStyle s18() => _createTextStyle(18);
+  TextStyle s20() => _createTextStyle(20);
+
+  // Anda bisa menambahkan ukuran lain sesuai kebutuhan
+}
+
+class RegularWhiteStyle {
+  TextStyle _createTextStyle(double size) {
     return TextStyle(
-      color: color,
+      color: ColorConfig.solidWhite, // Warna default, bisa diubah
       fontSize: size,
-      fontWeight: weight,
-      fontStyle: style,
+      fontWeight: FontWeight.normal,
     );
   }
 
-  // regular onPrimary
-  static TextStyle regularOnPrimary14({
-    Color color = (ColorConfig.onPrimaryColor),
-    double size = 14.0,
-    FontWeight weight = FontWeight.normal,
-    FontStyle style = FontStyle.normal,
-  }) {
+  TextStyle s14() => _createTextStyle(14);
+  TextStyle s16() => _createTextStyle(16);
+  TextStyle s18() => _createTextStyle(18);
+  TextStyle s20() => _createTextStyle(20);
+
+  // Anda bisa menambahkan ukuran lain sesuai kebutuhan
+}
+
+class RegularGrayStyle {
+  TextStyle _createTextStyle(double size) {
     return TextStyle(
-      color: color,
+      color: ColorConfig.gray, // Warna default, bisa diubah
       fontSize: size,
-      fontWeight: weight,
-      fontStyle: style,
+      fontWeight: FontWeight.normal,
     );
   }
 
-  static TextStyle regularOnPrimary16({
-    Color color = (ColorConfig.onPrimaryColor),
-    double size = 16.0,
-    FontWeight weight = FontWeight.normal,
-    FontStyle style = FontStyle.normal,
-  }) {
-    return TextStyle(
-      color: color,
-      fontSize: size,
-      fontWeight: weight,
-      fontStyle: style,
-    );
-  }
+  TextStyle s14() => _createTextStyle(14);
+  TextStyle s16() => _createTextStyle(16);
+  TextStyle s18() => _createTextStyle(18);
+  TextStyle s20() => _createTextStyle(20);
 
-  static TextStyle regularOnPrimary18({
-    Color color = (ColorConfig.onPrimaryColor),
-    double size = 18.0,
-    FontWeight weight = FontWeight.normal,
-    FontStyle style = FontStyle.normal,
-  }) {
-    return TextStyle(
-      color: color,
-      fontSize: size,
-      fontWeight: weight,
-      fontStyle: style,
-    );
-  }
-
-  static TextStyle regularOnPrimary20({
-    Color color = (ColorConfig.onPrimaryColor),
-    double size = 20.0,
-    FontWeight weight = FontWeight.normal,
-    FontStyle style = FontStyle.normal,
-  }) {
-    return TextStyle(
-      color: color,
-      fontSize: size,
-      fontWeight: weight,
-      fontStyle: style,
-    );
-  }
-
-  // bold onSecondary
-  static TextStyle boldOnSecondary14({
-    Color color = (ColorConfig.onSecondaryColor),
-    double size = 14.0,
-    FontWeight weight = FontWeight.bold,
-    FontStyle style = FontStyle.normal,
-  }) {
-    return TextStyle(
-      color: color,
-      fontSize: size,
-      fontWeight: weight,
-      fontStyle: style,
-    );
-  }
-
-  static TextStyle boldOnSecondary16({
-    Color color = (ColorConfig.onSecondaryColor),
-    double size = 16.0,
-    FontWeight weight = FontWeight.bold,
-    FontStyle style = FontStyle.normal,
-  }) {
-    return TextStyle(
-      color: color,
-      fontSize: size,
-      fontWeight: weight,
-      fontStyle: style,
-    );
-  }
-
-  static TextStyle boldOnSecondary18({
-    Color color = (ColorConfig.onSecondaryColor),
-    double size = 18.0,
-    FontWeight weight = FontWeight.bold,
-    FontStyle style = FontStyle.normal,
-  }) {
-    return TextStyle(
-      color: color,
-      fontSize: size,
-      fontWeight: weight,
-      fontStyle: style,
-    );
-  }
-
-  static TextStyle boldOnSecondary20({
-    Color color = (ColorConfig.onSecondaryColor),
-    double size = 20.0,
-    FontWeight weight = FontWeight.bold,
-    FontStyle style = FontStyle.normal,
-  }) {
-    return TextStyle(
-      color: color,
-      fontSize: size,
-      fontWeight: weight,
-      fontStyle: style,
-    );
-  }
-
-  // regular onSecondary
-  static TextStyle regularOnSecondary14({
-    Color color = (ColorConfig.onSecondaryColor),
-    double size = 14.0,
-    FontWeight weight = FontWeight.normal,
-    FontStyle style = FontStyle.normal,
-  }) {
-    return TextStyle(
-      color: color,
-      fontSize: size,
-      fontWeight: weight,
-      fontStyle: style,
-    );
-  }
-
-  static TextStyle regularOnSecondary16({
-    Color color = (ColorConfig.onSecondaryColor),
-    double size = 16.0,
-    FontWeight weight = FontWeight.normal,
-    FontStyle style = FontStyle.normal,
-  }) {
-    return TextStyle(
-      color: color,
-      fontSize: size,
-      fontWeight: weight,
-      fontStyle: style,
-    );
-  }
-
-  static TextStyle regularOnSecondary18({
-    Color color = (ColorConfig.onSecondaryColor),
-    double size = 18.0,
-    FontWeight weight = FontWeight.normal,
-    FontStyle style = FontStyle.normal,
-  }) {
-    return TextStyle(
-      color: color,
-      fontSize: size,
-      fontWeight: weight,
-      fontStyle: style,
-    );
-  }
-
-  static TextStyle regularOnSecondary20({
-    Color color = (ColorConfig.onSecondaryColor),
-    double size = 20.0,
-    FontWeight weight = FontWeight.normal,
-    FontStyle style = FontStyle.normal,
-  }) {
-    return TextStyle(
-      color: color,
-      fontSize: size,
-      fontWeight: weight,
-      fontStyle: style,
-    );
-  }
+  // Anda bisa menambahkan ukuran lain sesuai kebutuhan
 }

@@ -18,7 +18,7 @@ class _AuthButtonState extends State<AuthButton> {
     return TextButton(
       onPressed: widget.onPressed,
       style: TextButton.styleFrom(
-          backgroundColor: (ColorConfig.secondaryColor),
+          backgroundColor: (ColorConfig.primaryColor),
           padding: const EdgeInsets.symmetric(
             vertical: 16,
             horizontal: 12,
@@ -29,7 +29,7 @@ class _AuthButtonState extends State<AuthButton> {
           minimumSize: const Size(double.infinity, 50)),
       child: Text(
         widget.buttonText,
-        style: TextstyleConfig.boldOnPrimary14(),
+        style: TextStyleConfig.boldWhite.s14(),
       ),
     );
   }
