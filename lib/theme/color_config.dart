@@ -9,7 +9,8 @@ class ColorConfig {
   static const Color darkerBlue2 = Color(0xff374066);
   static const Color lightBlue = Color(0xff455080);
   static const Color lightBlue2 = Color(0xff323c66);
-
+  static const Color lightBlue3 = Color(0xff3B82F6);
+  
   static const Color onPrimaryColor = solidWhite;
   static const Color onSecondaryColor = solidWhite;
   static const Color solidWhite = Color(0xffF6F6F6);

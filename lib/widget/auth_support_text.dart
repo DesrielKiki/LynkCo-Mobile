@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lynkco/theme/color_config.dart';
 import 'package:lynkco/theme/textstyle_config.dart';
 
 class AuthSupportText extends StatefulWidget {
@@ -30,7 +31,9 @@ class _AuthSupportTextState extends State<AuthSupportText> {
             onTap: () {},
             child: Text(
               widget.secondText,
-              style: TextStyleConfig.regularWhite.s14(),
+              style: TextStyleConfig.regularTertiary
+                  .s14()
+                  .copyWith(color: ColorConfig.lightBlue3),
             ))
       ],
     );
