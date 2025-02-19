@@ -4,7 +4,7 @@ import 'package:lynkco/theme/color_config.dart';
 class TextstyleConfig {
   // bold onPrimary
   static TextStyle? boldOnPrimary14({
-    Color color = const Color(ColorConfig.onPrimaryColor),
+    Color color = ColorConfig.onPrimaryColor,
     double size = 14.0,
     FontWeight weight = FontWeight.bold,
     FontStyle style = FontStyle.normal,
@@ -18,7 +18,7 @@ class TextstyleConfig {
   }
 
   static TextStyle boldOnPrimary16({
-    Color color = const Color(ColorConfig.onPrimaryColor),
+    Color color = ColorConfig.onPrimaryColor,
     double size = 16.0,
     FontWeight weight = FontWeight.bold,
     FontStyle style = FontStyle.normal,
@@ -32,7 +32,7 @@ class TextstyleConfig {
   }
 
   static TextStyle boldOnPrimary18({
-    Color color = const Color(ColorConfig.onPrimaryColor),
+    Color color = (ColorConfig.onPrimaryColor),
     double size = 18.0,
     FontWeight weight = FontWeight.bold,
     FontStyle style = FontStyle.normal,
@@ -46,7 +46,7 @@ class TextstyleConfig {
   }
 
   static TextStyle boldOnPrimary20({
-    Color color = const Color(ColorConfig.onPrimaryColor),
+    Color color = (ColorConfig.onPrimaryColor),
     double size = 20.0,
     FontWeight weight = FontWeight.bold,
     FontStyle style = FontStyle.normal,
@@ -61,7 +61,7 @@ class TextstyleConfig {
 
   // regular onPrimary
   static TextStyle regularOnPrimary14({
-    Color color = const Color(ColorConfig.onPrimaryColor),
+    Color color = (ColorConfig.onPrimaryColor),
     double size = 14.0,
     FontWeight weight = FontWeight.normal,
     FontStyle style = FontStyle.normal,
@@ -75,7 +75,7 @@ class TextstyleConfig {
   }
 
   static TextStyle regularOnPrimary16({
-    Color color = const Color(ColorConfig.onPrimaryColor),
+    Color color = (ColorConfig.onPrimaryColor),
     double size = 16.0,
     FontWeight weight = FontWeight.normal,
     FontStyle style = FontStyle.normal,
@@ -89,7 +89,7 @@ class TextstyleConfig {
   }
 
   static TextStyle regularOnPrimary18({
-    Color color = const Color(ColorConfig.onPrimaryColor),
+    Color color = (ColorConfig.onPrimaryColor),
     double size = 18.0,
     FontWeight weight = FontWeight.normal,
     FontStyle style = FontStyle.normal,
@@ -103,7 +103,7 @@ class TextstyleConfig {
   }
 
   static TextStyle regularOnPrimary20({
-    Color color = const Color(ColorConfig.onPrimaryColor),
+    Color color = (ColorConfig.onPrimaryColor),
     double size = 20.0,
     FontWeight weight = FontWeight.normal,
     FontStyle style = FontStyle.normal,
@@ -118,7 +118,7 @@ class TextstyleConfig {
 
   // bold onSecondary
   static TextStyle boldOnSecondary14({
-    Color color = const Color(ColorConfig.onSecondaryColor),
+    Color color = (ColorConfig.onSecondaryColor),
     double size = 14.0,
     FontWeight weight = FontWeight.bold,
     FontStyle style = FontStyle.normal,
@@ -132,7 +132,7 @@ class TextstyleConfig {
   }
 
   static TextStyle boldOnSecondary16({
-    Color color = const Color(ColorConfig.onSecondaryColor),
+    Color color = (ColorConfig.onSecondaryColor),
     double size = 16.0,
     FontWeight weight = FontWeight.bold,
     FontStyle style = FontStyle.normal,
@@ -146,7 +146,7 @@ class TextstyleConfig {
   }
 
   static TextStyle boldOnSecondary18({
-    Color color = const Color(ColorConfig.onSecondaryColor),
+    Color color = (ColorConfig.onSecondaryColor),
     double size = 18.0,
     FontWeight weight = FontWeight.bold,
     FontStyle style = FontStyle.normal,
@@ -160,7 +160,7 @@ class TextstyleConfig {
   }
 
   static TextStyle boldOnSecondary20({
-    Color color = const Color(ColorConfig.onSecondaryColor),
+    Color color = (ColorConfig.onSecondaryColor),
     double size = 20.0,
     FontWeight weight = FontWeight.bold,
     FontStyle style = FontStyle.normal,
@@ -175,7 +175,7 @@ class TextstyleConfig {
 
   // regular onSecondary
   static TextStyle regularOnSecondary14({
-    Color color = const Color(ColorConfig.onSecondaryColor),
+    Color color = (ColorConfig.onSecondaryColor),
     double size = 14.0,
     FontWeight weight = FontWeight.normal,
     FontStyle style = FontStyle.normal,
@@ -189,7 +189,7 @@ class TextstyleConfig {
   }
 
   static TextStyle regularOnSecondary16({
-    Color color = const Color(ColorConfig.onSecondaryColor),
+    Color color = (ColorConfig.onSecondaryColor),
     double size = 16.0,
     FontWeight weight = FontWeight.normal,
     FontStyle style = FontStyle.normal,
@@ -203,7 +203,7 @@ class TextstyleConfig {
   }
 
   static TextStyle regularOnSecondary18({
-    Color color = const Color(ColorConfig.onSecondaryColor),
+    Color color = (ColorConfig.onSecondaryColor),
     double size = 18.0,
     FontWeight weight = FontWeight.normal,
     FontStyle style = FontStyle.normal,
@@ -217,7 +217,7 @@ class TextstyleConfig {
   }
 
   static TextStyle regularOnSecondary20({
-    Color color = const Color(ColorConfig.onSecondaryColor),
+    Color color = (ColorConfig.onSecondaryColor),
     double size = 20.0,
     FontWeight weight = FontWeight.normal,
     FontStyle style = FontStyle.normal,

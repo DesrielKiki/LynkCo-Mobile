@@ -55,16 +55,12 @@ class _AuthTextfieldState extends State<AuthTextfield> {
                 },
                 icon: Icon(
                   obsecureText ? Icons.visibility : Icons.visibility_off,
-                  color: const Color(
-                    ColorConfig.onSecondaryColor,
-                  ),
+                  color: ColorConfig.onSecondaryColor,
                 ),
               )
             : Icon(
                 widget.icon,
-                color: const Color(
-                  ColorConfig.onSecondaryColor,
-                ),
+                color: ColorConfig.onSecondaryColor,
               ),
         filled: true,
         fillColor: Colors.white,
