@@ -62,7 +62,7 @@ class _AuthTextfieldState extends State<AuthTextfield> {
               )
             : Icon(
                 widget.icon,
-                color: ColorConfig.secondaryColor,
+                color: ColorConfig.solidWhite,
               ),
         filled: true,
         fillColor: ColorConfig.tertiaryColor,
