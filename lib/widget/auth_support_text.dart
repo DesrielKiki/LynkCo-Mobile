@@ -23,14 +23,14 @@ class _AuthSupportTextState extends State<AuthSupportText> {
       children: [
         Text(
           widget.firstText,
-          style: TextstyleConfig.regularOnPrimary14(),
+          style: TextStyleConfig.regularWhite.s14(),
         ),
         const SizedBox(width: 8),
         GestureDetector(
             onTap: () {},
             child: Text(
               widget.secondText,
-              style: TextstyleConfig.regularOnPrimary14(),
+              style: TextStyleConfig.regularWhite.s14(),
             ))
       ],
     );
