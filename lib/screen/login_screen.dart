@@ -22,7 +22,7 @@ class _LoginScreenState extends State<LoginScreen> {
         backgroundColor: ColorConfig.primaryColor,
         body: Center(
           child: Padding(
-            padding: const EdgeInsets.all(32.0),
+            padding: const EdgeInsets.all(16.0),
             child: IntrinsicHeight(
               child: Container(
                 height: double.infinity,
@@ -35,9 +35,8 @@ class _LoginScreenState extends State<LoginScreen> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
-                        "Selamat datang di LynkCo",
-                        style: TextstyleConfig.boldOnPrimary16(
-                            color: (Colors.white)),
+                        "Selamat datang di LynkCoc",
+                        style: TextStyleConfig.boldWhite.s20(),
                       ),
                       const SizedBox(height: 16),
                       AuthTextfield(
