@@ -37,17 +37,19 @@ class _AuthTextfieldState extends State<AuthTextfield> {
     return TextFormField(
       keyboardType: widget.keyboardType,
       controller: widget.controller,
+      style: TextStyleConfig.regularWhite.s18(),
       obscureText: obsecureText,
       decoration: InputDecoration(
         contentPadding: const EdgeInsets.symmetric(
           vertical: 14,
-          horizontal: 16,
+          horizontal: 24,
         ),
         //    hintText: widget.hintText,
         labelText: widget.labelText,
         labelStyle: TextStyleConfig.regularGray.s14(),
         suffixIcon: widget.obscureText
             ? IconButton(
+                padding: const EdgeInsets.only(right: 16),
                 onPressed: () {
                   setState(() {
                     obsecureText = !obsecureText;
@@ -55,7 +57,7 @@ class _AuthTextfieldState extends State<AuthTextfield> {
                 },
                 icon: Icon(
                   obsecureText ? Icons.visibility : Icons.visibility_off,
-                  color: ColorConfig.secondaryColor,
+                  color: ColorConfig.solidWhite,
                 ),
               )
             : Icon(
@@ -63,7 +65,7 @@ class _AuthTextfieldState extends State<AuthTextfield> {
                 color: ColorConfig.secondaryColor,
               ),
         filled: true,
-        fillColor: Colors.white,
+        fillColor: ColorConfig.tertiaryColor,
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(
             20,
