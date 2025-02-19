@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:lynkco/screen/login_screen.dart';
 import 'package:lynkco/widget/auth_textfield.dart';
 
 void main() {
@@ -18,6 +17,6 @@ class MyApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
         ),
-        home: const LoginScreen());
+        home: const Scaffold());
   }
 }
