@@ -42,14 +42,13 @@ class _AuthTextfieldState extends State<AuthTextfield> {
       decoration: InputDecoration(
         contentPadding: const EdgeInsets.symmetric(
           vertical: 14,
-          horizontal: 24,
+          horizontal: 16,
         ),
         //    hintText: widget.hintText,
         labelText: widget.labelText,
         labelStyle: TextStyleConfig.regularGray.s14(),
         suffixIcon: widget.obscureText
             ? IconButton(
-                padding: const EdgeInsets.only(right: 16),
                 onPressed: () {
                   setState(() {
                     obsecureText = !obsecureText;
