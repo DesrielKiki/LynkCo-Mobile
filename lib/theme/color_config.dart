@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 class ColorConfig {
-  static const Color primaryColor = darkerBlue;
-  static const Color secondaryColor = lightBlue;
+  static const Color primaryColor = lightBlue;
+  static const Color secondaryColor = darkerBlue;
 
   static const Color darkerBlue = Color(0xff242b4a);
   static const Color darkerBlue2 = Color(0xff374066);
