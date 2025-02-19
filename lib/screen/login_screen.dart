@@ -19,51 +19,52 @@ class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        backgroundColor: ColorConfig.primaryColor,
         body: Center(
-      child: Padding(
-        padding: const EdgeInsets.all(32.0),
-        child: IntrinsicHeight(
-          child: Container(
-            height: double.infinity,
-            decoration: BoxDecoration(
-                color: (ColorConfig.secondaryColor),
-                borderRadius: BorderRadius.circular(20)),
-            child: Padding(
-              padding: const EdgeInsets.all(24.0),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Text(
-                    "Selamat datang di LynkCo",
-                    style:
-                        TextstyleConfig.boldOnPrimary16(color: (Colors.white)),
+          child: Padding(
+            padding: const EdgeInsets.all(32.0),
+            child: IntrinsicHeight(
+              child: Container(
+                height: double.infinity,
+                decoration: BoxDecoration(
+                    color: (ColorConfig.secondaryColor),
+                    borderRadius: BorderRadius.circular(20)),
+                child: Padding(
+                  padding: const EdgeInsets.all(24.0),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        "Selamat datang di LynkCo",
+                        style: TextstyleConfig.boldOnPrimary16(
+                            color: (Colors.white)),
+                      ),
+                      const SizedBox(height: 16),
+                      AuthTextfield(
+                        labelText: "Username or Email",
+                        icon: Icons.person,
+                        obscureText: false,
+                        controller: _userLoginController,
+                        keyboardType: TextInputType.name,
+                      ),
+                      const SizedBox(height: 12),
+                      AuthTextfield(
+                        labelText: "Password",
+                        icon: Icons.person,
+                        obscureText: true,
+                        controller: _passwordController,
+                        keyboardType: TextInputType.name,
+                      ),
+                      const SizedBox(height: 20),
+                      const AuthButton(buttonText: "Login Kang"),
+                      const AuthSupportText(
+                          firstText: "anjay mabar", secondText: "gacor king")
+                    ],
                   ),
-                  const SizedBox(height: 16),
-                  AuthTextfield(
-                    labelText: "Username or Email",
-                    icon: Icons.person,
-                    obscureText: false,
-                    controller: _userLoginController,
-                    keyboardType: TextInputType.name,
-                  ),
-                  const SizedBox(height: 12),
-                  AuthTextfield(
-                    labelText: "Password",
-                    icon: Icons.person,
-                    obscureText: true,
-                    controller: _passwordController,
-                    keyboardType: TextInputType.name,
-                  ),
-                  const SizedBox(height: 20),
-                  const AuthButton(buttonText: "Login Kang"),
-                  const AuthSupportText(
-                      firstText: "anjay mabar", secondText: "gacor king")
-                ],
+                ),
               ),
             ),
           ),
-        ),
-      ),
-    ));
+        ));
   }
 }
