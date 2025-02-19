@@ -86,6 +86,8 @@ class RegularGrayStyle {
     );
   }
 
+  TextStyle s10() => _createTextStyle(10);
+  TextStyle s12() => _createTextStyle(12);
   TextStyle s14() => _createTextStyle(14);
   TextStyle s16() => _createTextStyle(16);
   TextStyle s18() => _createTextStyle(18);
