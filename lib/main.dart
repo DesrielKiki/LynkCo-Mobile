@@ -1,15 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:lynkco/screen/auth/login_screen.dart';
-import 'package:lynkco/widget/auth_textfield.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  final TextEditingController _controller = TextEditingController();
-
-  MyApp({super.key});
+  const MyApp({super.key});
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
